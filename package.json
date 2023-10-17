@@ -2,9 +2,10 @@
   "name": "student-management-restfullapi-nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "functions/index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "build": "netlify deploy --prod",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +15,9 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongoose": "^7.6.1",
-    "nodemon": "^3.0.1"
+    "netlify-cli": "^16.7.0",
+    "netlify-lambda": "^2.0.16",
+    "nodemon": "^3.0.1",
+    "serverless-http": "^3.2.0"
   }
 }
