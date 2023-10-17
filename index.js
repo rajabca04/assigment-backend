@@ -21,6 +21,10 @@ mongoose
 
 const port = 3000;
 
+app.get("/", (req, res) => {
+  res.send("I am home route please visit /api/assigment-data-get, /api/assigment-data-post, /api/assigment-data-delete , /api/assigment-data-update");
+});
+
 // get assigment data
 app.get("/api/assigment-data-get", async (req, res) => {
   try {
